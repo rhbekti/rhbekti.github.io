@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import workExpriences from '@/model/work'
+import workExpriences from '@/model/works'
 import WorkItem from '@/components/work/WorkItem.vue'
 </script>
 

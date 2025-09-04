@@ -2,7 +2,9 @@
 import { Header } from '@/components/header'
 import { WorkList } from '@/components/work'
 import SubTitle from '@/components/SubTitle.vue'
-import { About } from './components/about'
+import { About } from '@/components/about'
+import { Education } from '@/components/education'
+import { Skill } from '@/components/skill'
 </script>
 
 <template>
@@ -16,8 +18,10 @@ import { About } from './components/about'
     <WorkList />
 
     <SubTitle title="Education" />
+    <Education />
 
     <SubTitle title="Skills" />
+    <Skill />
   </main>
 </template>
 
