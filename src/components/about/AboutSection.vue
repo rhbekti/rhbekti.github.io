@@ -1,7 +1,7 @@
 <template>
   <section class="flex flex-row items-center">
     <div class="w-full">
-      <div class="mb-10 flex flex-wrap items-center justify-between gap-3">
+      <div class="mb-10 flex flex-col lg:flex-row flex-wrap items-center justify-between gap-3">
         <div class="flex items-center gap-2.5">
           <span class="relative flex size-2 shrink-0">
             <span class="absolute inline-flex size-full animate-ping rounded-full bg-green-400 opacity-60"></span>
@@ -14,9 +14,11 @@
       <div class="flex">
         <div>
           <div class="my-4">
-            <h1 class="text-7xl font-bold text-gray-800dark:text-slate-200">Hi, I'm Bekti</h1>
+            <h1 class="text-5xl text-center lg:text-start lg:text-7xl font-bold text-gray-800dark:text-slate-200">Hi,
+              I'm Bekti</h1>
           </div>
-          <div class="mb-10 flex flex-wrap items-center gap-x-5 gap-y-2 border-foreground/5 pt-5">
+          <div
+            class="mb-10 flex justify-center lg:justify-start flex-wrap items-center gap-x-5 gap-y-2 border-foreground/5 pt-5">
             <span class="font-mono text-xs lg:text-sm tracking-wide text-foreground">
               Web Developer
             </span>

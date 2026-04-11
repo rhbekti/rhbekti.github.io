@@ -4,6 +4,9 @@ import {
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
+  NavigationMenuIndicator,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
 } from '@/components/ui/navigation-menu'
 import ModeToggle from '../ModeToggle.vue';
 </script>
@@ -14,7 +17,7 @@ import ModeToggle from '../ModeToggle.vue';
       <nav class="mx-auto flex h-14 max-w-5xl items-center justify-between px-6">
         <a class="font-mono text-sm font-semibold tracking-tight uppercase text-foreground transition-colors hover:text-primary"
           href="/">RHBEKTI</a>
-        <div>
+        <div class="hidden md:block">
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
@@ -29,7 +32,9 @@ import ModeToggle from '../ModeToggle.vue';
               <NavigationMenuItem>
                 <NavigationMenuLink href="/">About</NavigationMenuLink>
               </NavigationMenuItem>
+              <NavigationMenuIndicator />
             </NavigationMenuList>
+            <NavigationMenuViewport />
           </NavigationMenu>
         </div>
         <div>

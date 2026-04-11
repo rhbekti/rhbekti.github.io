@@ -31,7 +31,7 @@ const steps = [
   },
   {
     step: 5,
-    title: 'PT SINTESA SINAR ASIA - IT Program (FULLTIME)',
+    title: 'IT Program (FULLTIME)',
     description:
       'May 2021 - Feb 2023',
   },
