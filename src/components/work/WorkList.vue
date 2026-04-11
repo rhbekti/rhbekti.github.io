@@ -8,24 +8,24 @@ import { Stepper, StepperDescription, StepperItem, StepperSeparator, StepperTitl
 const steps = [
   {
     step: 1,
-    title: 'PT LEMBIMJAR YOGYAKARTA - Software Engineer (FULLTIME)',
+    title: 'Software Engineer (FULLTIME)',
     description:
       'Dec 2024 - Present',
   },
   {
     step: 2,
-    title: 'PT BARACIPTA ESA ENGINEERING - Full Stack Developer (INTERN)',
+    title: 'Full Stack Developer (INTERN)',
     description: 'Feb 2024 - Jun 2024',
   },
   {
     step: 3,
-    title: 'BANGKIT ACADEMY - Android Dev Program (SIB)',
+    title: 'Android Dev Program (SIB)',
     description:
       'Aug 2023 - Dec 2023',
   },
   {
     step: 4,
-    title: 'PT WABI TEKNOLOGI INDONESIA - Full Stack Developer (INTERN)',
+    title: 'Full Stack Developer (INTERN)',
     description:
       'Nov 2022 - Agu 2023',
   },
@@ -59,7 +59,7 @@ const steps = [
           {{ step.title }}
         </StepperTitle>
         <StepperDescription :class="[state === 'active' && 'text-primary']"
-          class="sr-only text-xs text-muted-foreground transition md:not-sr-only lg:text-sm">
+          class="text-xs text-muted-foreground transition md:not-sr-only lg:text-sm">
           {{ step.description }}
         </StepperDescription>
       </div>

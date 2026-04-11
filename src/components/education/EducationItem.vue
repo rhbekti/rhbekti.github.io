@@ -11,7 +11,7 @@ defineProps({
     <div class="flex flex-row justify-between mb-4 items-center">
         <div class="flex items-center gap-4">
             <div
-                class="rounded-xl xl:rounded-full overflow-hidden h-16 w-16 border border-gray-300 shadow-md p-3 dark:bg-white">
+                class="rounded-xl hidden md:block xl:rounded-full overflow-hidden h-16 w-16 border border-gray-300 shadow-md p-3 dark:bg-white">
                 <img :src="logo" alt="HLD Logo" class="w-full h-full object-cover" />
             </div>
             <div>

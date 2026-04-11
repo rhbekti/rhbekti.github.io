@@ -9,7 +9,7 @@ import { Education } from '@/components/education'
 <template>
   <Header />
 
-  <main class="relative mx-auto flex w-full max-w-5xl flex-1 flex-col pt-32">
+  <main class="relative mx-auto flex w-full max-w-5xl flex-1 flex-col pt-32 px-8">
     <About />
 
     <SubTitle title="Work Experience" />
