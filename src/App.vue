@@ -4,14 +4,12 @@ import { WorkList } from '@/components/work'
 import SubTitle from '@/components/SubTitle.vue'
 import { About } from '@/components/about'
 import { Education } from '@/components/education'
-import { Skill } from '@/components/skill'
 </script>
 
 <template>
-  <main class="w-full lg:max-w-1/2 px-4 py-6 mx-auto">
-    <Header />
+  <Header />
 
-    <SubTitle title="About" />
+  <main class="relative mx-auto flex w-full max-w-5xl flex-1 flex-col pt-32">
     <About />
 
     <SubTitle title="Work Experience" />
@@ -19,9 +17,6 @@ import { Skill } from '@/components/skill'
 
     <SubTitle title="Education" />
     <Education />
-
-    <SubTitle title="Skills" />
-    <Skill />
   </main>
 </template>
 
