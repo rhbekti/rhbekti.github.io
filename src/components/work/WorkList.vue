@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import workExpriences from '@/model/works'
-import WorkItem from '@/components/work/WorkItem.vue'
 import { Check, Circle, Dot } from 'lucide-vue-next'
 import { Button } from '@/components/ui/button'
 import { Stepper, StepperDescription, StepperItem, StepperSeparator, StepperTitle, StepperTrigger } from '@/components/ui/stepper'
@@ -9,29 +7,34 @@ const steps = [
   {
     step: 1,
     title: 'Software Engineer (FULLTIME)',
+    company: 'PT LEMBIMBJAR NEUTRON YOGYAKARTA',
     description:
       'Dec 2024 - Present',
   },
   {
     step: 2,
     title: 'Full Stack Developer (INTERN)',
+    company: 'PT BARACIPTA ESA ENGINEERING',
     description: 'Feb 2024 - Jun 2024',
   },
   {
     step: 3,
     title: 'Android Dev Program (SIB)',
+    company: 'BANGKIT ACCADEMY',
     description:
       'Aug 2023 - Dec 2023',
   },
   {
     step: 4,
     title: 'Full Stack Developer (INTERN)',
+    company: 'PT WABI TEKNOLOGI INDONESIA',
     description:
       'Nov 2022 - Agu 2023',
   },
   {
     step: 5,
     title: 'IT Program (FULLTIME)',
+    company: 'PT SINTESA SINAR ASIA',
     description:
       'May 2021 - Feb 2023',
   },
@@ -60,7 +63,10 @@ const steps = [
         </StepperTitle>
         <StepperDescription :class="[state === 'active' && 'text-primary']"
           class="text-xs text-muted-foreground transition md:not-sr-only lg:text-sm">
-          {{ step.description }}
+          <div class="flex flex-col gap-1">
+            <span>{{ step.company }}</span>
+            <span>{{ step.description }}</span>
+          </div>
         </StepperDescription>
       </div>
     </StepperItem>
